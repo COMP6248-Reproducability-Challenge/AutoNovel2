@@ -1,0 +1,114 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>6c6c67db-df19-4ec5-8c81-df82f9072140</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>auto_novel.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PythonApplication1</Name>
+    <RootNamespace>PythonApplication1</RootNamespace>
+    <InterpreterId>CondaEnv|CondaEnv|010_anaconda</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="auto_novel.py" />
+    <Compile Include="data\cifarloader.py" />
+    <Compile Include="data\concat.py" />
+    <Compile Include="data\imagenetloader.py" />
+    <Compile Include="data\omniglot.py" />
+    <Compile Include="data\omniglotloader.py" />
+    <Compile Include="data\rotationloader.py" />
+    <Compile Include="data\svhnloader.py" />
+    <Compile Include="data\utils.py" />
+    <Compile Include="data\__init__.py" />
+    <Compile Include="selfsupervised_learning.py" />
+    <Compile Include="supervised_learning.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="data\" />
+    <Folder Include="data\experiments\" />
+    <Folder Include="data\experiments\auto_novel\" />
+    <Folder Include="data\experiments\auto_novel_omniglot\" />
+    <Folder Include="data\experiments\pretrained\" />
+    <Folder Include="data\experiments\pretrained\auto_novel\" />
+    <Folder Include="data\experiments\pretrained\auto_novel_imagenet\" />
+    <Folder Include="data\experiments\pretrained\auto_novel_omniglot\" />
+    <Folder Include="data\experiments\pretrained\selfsupervised_learning\" />
+    <Folder Include="data\experiments\pretrained\supervised_learning\" />
+    <Folder Include="data\experiments\supervised_learning\" />
+    <Folder Include="data\__pycache__\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\experiments\pretrained\auto_novel\resnet_cifar10.pth" />
+    <Content Include="data\experiments\pretrained\auto_novel\resnet_cifar100.pth" />
+    <Content Include="data\experiments\pretrained\auto_novel\resnet_IL_cifar10.pth" />
+    <Content Include="data\experiments\pretrained\auto_novel\resnet_IL_cifar100.pth" />
+    <Content Include="data\experiments\pretrained\auto_novel\resnet_IL_svhn.pth" />
+    <Content Include="data\experiments\pretrained\auto_novel\resnet_rotnet_cifar10.pth" />
+    <Content Include="data\experiments\pretrained\auto_novel\resnet_rotnet_cifar100.pth" />
+    <Content Include="data\experiments\pretrained\auto_novel\resnet_rotnet_svhn.pth" />
+    <Content Include="data\experiments\pretrained\auto_novel\resnet_svhn.pth" />
+    <Content Include="data\experiments\pretrained\auto_novel_imagenet\resnet_A.pth" />
+    <Content Include="data\experiments\pretrained\auto_novel_imagenet\resnet_B.pth" />
+    <Content Include="data\experiments\pretrained\auto_novel_imagenet\resnet_C.pth" />
+    <Content Include="data\experiments\pretrained\auto_novel_omniglot\vgg6_seed_0_Angelic.pth" />
+    <Content Include="data\experiments\pretrained\auto_novel_omniglot\vgg6_seed_0_Atemayar_Qelisayer.pth" />
+    <Content Include="data\experiments\pretrained\auto_novel_omniglot\vgg6_seed_0_Atlantean.pth" />
+    <Content Include="data\experiments\pretrained\auto_novel_omniglot\vgg6_seed_0_Aurek-Besh.pth" />
+    <Content Include="data\experiments\pretrained\auto_novel_omniglot\vgg6_seed_0_Avesta.pth" />
+    <Content Include="data\experiments\pretrained\auto_novel_omniglot\vgg6_seed_0_Ge_ez.pth" />
+    <Content Include="data\experiments\pretrained\auto_novel_omniglot\vgg6_seed_0_Glagolitic.pth" />
+    <Content Include="data\experiments\pretrained\auto_novel_omniglot\vgg6_seed_0_Gurmukhi.pth" />
+    <Content Include="data\experiments\pretrained\auto_novel_omniglot\vgg6_seed_0_Kannada.pth" />
+    <Content Include="data\experiments\pretrained\auto_novel_omniglot\vgg6_seed_0_Keble.pth" />
+    <Content Include="data\experiments\pretrained\auto_novel_omniglot\vgg6_seed_0_Malayalam.pth" />
+    <Content Include="data\experiments\pretrained\auto_novel_omniglot\vgg6_seed_0_Manipuri.pth" />
+    <Content Include="data\experiments\pretrained\auto_novel_omniglot\vgg6_seed_0_Mongolian.pth" />
+    <Content Include="data\experiments\pretrained\auto_novel_omniglot\vgg6_seed_0_Old_Church_Slavonic_%28Cyrillic%29.pth" />
+    <Content Include="data\experiments\pretrained\auto_novel_omniglot\vgg6_seed_0_Oriya.pth" />
+    <Content Include="data\experiments\pretrained\auto_novel_omniglot\vgg6_seed_0_Sylheti.pth" />
+    <Content Include="data\experiments\pretrained\auto_novel_omniglot\vgg6_seed_0_Syriac_%28Serto%29.pth" />
+    <Content Include="data\experiments\pretrained\auto_novel_omniglot\vgg6_seed_0_Tengwar.pth" />
+    <Content Include="data\experiments\pretrained\auto_novel_omniglot\vgg6_seed_0_Tibetan.pth" />
+    <Content Include="data\experiments\pretrained\auto_novel_omniglot\vgg6_seed_0_ULOG.pth" />
+    <Content Include="data\experiments\pretrained\resnet18_imagenet_classif_882_ICLR18.pth" />
+    <Content Include="data\experiments\pretrained\selfsupervised_learning\rotnet_cifar10.pth" />
+    <Content Include="data\experiments\pretrained\selfsupervised_learning\rotnet_cifar100.pth" />
+    <Content Include="data\experiments\pretrained\selfsupervised_learning\rotnet_svhn.pth" />
+    <Content Include="data\experiments\pretrained\supervised_learning\resnet_rotnet_cifar10.pth" />
+    <Content Include="data\experiments\pretrained\supervised_learning\resnet_rotnet_cifar100.pth" />
+    <Content Include="data\experiments\pretrained\supervised_learning\resnet_rotnet_svhn.pth" />
+    <Content Include="data\experiments\pretrained\vgg6_omniglot_proto.pth" />
+    <Content Include="data\__pycache__\cifarloader.cpython-38.pyc" />
+    <Content Include="data\__pycache__\concat.cpython-38.pyc" />
+    <Content Include="data\__pycache__\omniglot.cpython-38.pyc" />
+    <Content Include="data\__pycache__\omniglotloader.cpython-38.pyc" />
+    <Content Include="data\__pycache__\svhnloader.cpython-38.pyc" />
+    <Content Include="data\__pycache__\utils.cpython-38.pyc" />
+    <Content Include="data\__pycache__\__init__.cpython-38.pyc" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="CondaEnv|CondaEnv|010_anaconda" />
+    <InterpreterReference Include="CondaEnv|CondaEnv|auto_novel" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
