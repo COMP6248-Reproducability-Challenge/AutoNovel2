@@ -15,3 +15,7 @@ Then, activate the installed environment by
 ```
 conda activate auto_novel
 ```
+
+## Results
+![splash](asset/res1.png)
+![splash](asset/res2.png)
